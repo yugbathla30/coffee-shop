@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: rgb(243, 226, 202);
+        }
+        h2{
+            color: #000;
+        }
+        label{
+            color: #000;
+        }
+
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-right: 70px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        .form_group select {
+            padding: 10px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+
+
+        .form-group input[type="submit"] {
+            background-color: #BFD8AD;
+            width: 100%;
+            cursor: pointer;
+            color: #000000;          
+            padding: 20px 20px 20px 20px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #333333;
+        }
+
+
+
+        * {
+          margin: 0;
+        }
+            
+        .footer {
+            font-size:large ;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .foot{
+            height: 100px;
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right:30px;
+            padding-bottom: 40px;
+        }
+        li{
+            list-style-type: none;
+            display: inline;
+            margin: 10px;
+            }
+        .jobs{
+            color: rgb(163, 18, 18);
+            position:relative; 
+            float: right;
+            background-color: #000000;
+            color: white;
+            font-weight: 700;
+            height: 40px;
+            font-size: 18px;                
+            }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:link{
+            color: rgb(255, 255, 255);   
+        }
+        #socials{
+            display: flex;
+            align-items:flex-start;    
+        } 
+        #signup{
+            background-color: #BFD8AD;
+            height: 38px;
+            width: 145px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            list-style-type: none;
+            display: inline;
+            margin: 10px;
+            padding: 20px 20px 20px 20px;
+        }
+        
+    
+  
+        .header{
+            height: 110px;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right:30px;
+            padding-top: 10px;
+        }
+        .menu{
+            color: rgb(163, 18, 18);
+            position:relative; 
+            float: right;
+            background-color: #000000;
+            color: white;
+            font-weight: 700;
+            height: 40px;
+            font-size: 20px;
+                
+            }
+        #orderonline{
+            background-color: #BFD8AD;
+            height: 38px;
+            width: 145px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            list-style-type: none;
+            display: inline;
+            margin: 10px;
+            padding: 20px 20px 20px 20px;
+        }
+        .selectlocation {
+            background-color: #000000;
+            color: white;
+            font-weight: 700;
+            height: 40px;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <nav id="logo">
+            <ul>
+                <li><a href="coffee.html"><img src="logo.png"  height="80"></a></li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <ul>
+                <li><select class="selectlocation" onchange="window.location.href=this.value;">
+                        <option>Locations</option>
+                        <option value="locations.html">Delhi</option>
+                    </select>
+                <a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="orderonline"><a href="/orderonline" style="color: #000000;">Order Online</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1> Contact Us</h1>
+        <br><br>
+        <h3>Send us a message and we’ll get back to you as soon as possible. Looking forward to hearing from you.</h3>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Contact Number" required>
+            </div>
+            <div class="form-group">
+                <label for="inquiry">Inquiry:</label><br>
+                <select>
+                    <option>General Inquiry</option>
+                    <option>Press Inquiry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Your message:</label><br>
+                <textarea rows="4" placeholder="Your message"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+
+    <div class="foot">
+        <div id="socials">
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="insta.png" width="50" height="60"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="fb.png" width="50" height="60" ></a></li>
+                <li><a href="https://twitter.com/"><img src="x.png" width="50" height="60"></a></li>
+            </ul>
+        </div>
+        <div class="jobs">
+            <ul>
+                <li><a href="jobs.html">JOBS</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li><a href="charity.html">CHARITY</a></li>
+                <li id="signup"><a href="signup.html" style="color: #000000;">EMAIL SIGNUP</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Brews and Bushes. Powered by DTU.</p>
+    </footer>
+</body>
+
+</html>
